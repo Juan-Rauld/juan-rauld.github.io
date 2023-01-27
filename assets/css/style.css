@@ -1,3 +1,7 @@
+main {
+  margin: 5rem 0;
+}
+
 #foto-portada {
   height: 10px;
   width: 10px;
@@ -11,3 +15,11 @@
   color: gray;
 }
 
+.imagen-margen {
+  margin: 10rem 2rem;
+}
+
+.texto-margen {
+  margin: 0 2rem;
+  padding: 10rem 0 0 0;
+}
