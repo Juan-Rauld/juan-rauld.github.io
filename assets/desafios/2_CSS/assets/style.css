@@ -1,0 +1,144 @@
+html {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+header,
+body,
+footer {
+    font-family: poppins;
+    margin: 0;
+}
+
+header {
+    height: 20em;
+    background-color: #eeeee4;
+}
+
+header h1 {
+    margin: 0px;
+}
+
+
+footer {
+    height: 3em;
+    line-height: 3em;
+    background-color: #eeeee4;
+    text-align: center;
+    font-weight: 400;
+}
+
+/*Tomé libertades de color en el footer*/
+
+h1 {
+    font-weight: 400;
+    font-size: 3.052rem;
+}
+
+/* PREGUNTA: ¿Está bien tener varios - "padding: 0em 1em 0em 1em;" - en distintas partes? ¿cómo podría ser más eficiente?*/
+
+h2 {
+    font-size: 2.441rem;
+    padding: 1em 1em 0.5em 1em;
+}
+
+h3 {
+    font-size: 1.953rem;
+    padding: 0em 1em 0em 1em;
+}
+
+h4 {
+    font-size: 1.563rem;
+    padding: 0em 1em 0em 1em;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h5:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ff5e5e;
+    margin: 0;
+    margin-top: 1em;
+    border-radius: 20px;
+    text-align: left;
+}
+
+/* Class */
+
+.products {
+    width: 80%;
+    margin: auto;
+}
+
+.products td {
+    width: 50%;
+    padding: 2em;
+}
+
+.products img {
+    width: 100%;
+    border: solid 1px rgba(221, 221, 221, 0);
+    border-radius: 5px;
+}
+
+.products p {
+    text-align: justify;
+}
+
+.header {
+    height: 10em;
+    padding: 5em;
+    background-size: cover;
+    background-position: center;
+}
+
+/* entiendo que tengo que mejorar la sintaxis y formas de nombres de las clases. */
+
+.strong {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.center {
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    padding-bottom: 0.5em;
+}
+
+/* ID's */
+
+#banner-incial {
+    height: 10em;
+    float: right;
+}
+
+#aviso {
+    background-color: rgba(127, 255, 212, 0.38);
+    border-radius: 10px;
+    margin: auto;
+    text-align: justify;
+    width: 50%;
+    height: 50%;
+    padding: 1em;
+}
+
+
+/* Optimizaciones a futuro: 
+
+Si voy a tener textos justificados en todas los "p", es mejor usar un body p {text-align: justify}. así quedan todos los textos Paragraph centrados.
+
+Buscar el orden y jerarquías principales y desde allí construír.
+
+Si en el trabajo previo sabemos que hay algún tipo de atributo transversal a todas las secciones es mejor declararlo en las etiquetas vez de hacer ID's o clases específicas para cada una de las secciones específicas.
+
+Más orden con los nombres de las clases
+
+Usar clases "heredadas" (al menos así lo entiendo) que si tengo dentro del header, todos los h1 de una cierta manera, utilizar "header h1 {atributos}".
+
+*/
