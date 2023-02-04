@@ -52,6 +52,9 @@ h1 {
     flex-direction: column;
     min-width: 260px;
     max-width: 400px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
 }
 
 .caja_perfil {
@@ -113,6 +116,8 @@ h1 {
     background-color: #A491D3;
     color: white;
     border-radius: 2px;
+    margin: 1em;
+
 }
 
 .foto_contacto {
