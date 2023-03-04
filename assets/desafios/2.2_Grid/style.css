@@ -1,0 +1,106 @@
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: "Poppins", sans-serif;
+}
+
+/* min body height */
+
+body {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+header, footer {
+  width: 100vw;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+/* CSS */
+.grid {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-areas:
+    "header header header"
+    "menu main main"
+    "footer footer footer";
+  height: 100vh;
+  grid-template-rows: 1fr 14fr 1fr;
+  gap: 1rem;
+}
+
+.header {
+  grid-area: header;
+  background-color: aquamarine;
+}
+
+.main {
+  grid-area: main;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: gray;
+}
+
+.flex-container-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-menu {
+  width: max-content;
+}
+
+.titulo-menu {
+  width: max-content;
+  font-weight: 700;
+  font-size: large;
+}
+
+.grilla-card-flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1em;
+  height: 100%;
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.img-card {
+  width: 100px;
+}
