@@ -166,7 +166,7 @@ ul {
   list-style-type: none;
 }
 
-ul > li:hover,
+ul>li:hover,
 a:hover {
   color: rgb(73, 73, 73);
   transition: 300ms;
@@ -188,4 +188,85 @@ a:visited {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.mobile-rrss {
+  display: none
+}
+
+
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+  }
+
+  .izquierda,
+  .derecha {
+    display: none;
+  }
+
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 15px;
+  }
+
+  .intro {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contenedor-main {
+    padding: 3rem 0rem;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .subsection-main-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem 1rem 0 1rem;
+    padding: 0 0 0 0;
+    gap: 1rem;
+  }
+
+  .subsection-main-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin: 0 1rem 2rem 1rem;
+    padding: 0;
+    width: 80%;
+  }
+
+  ul>li,
+  ul>a {
+    font-size: 16px;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+
+  .mobile-rrss {
+    display: inline;
+  }
+
+  .mobile-rrss {
+    padding: 3rem;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+
 }
