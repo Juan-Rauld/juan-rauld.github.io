@@ -53,3 +53,7 @@ main {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+p {
+  color: gray;
+}
