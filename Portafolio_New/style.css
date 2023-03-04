@@ -194,6 +194,9 @@ a:visited {
   display: none
 }
 
+.chat {
+  
+}
 
 @media only screen and (max-width: 600px) {
   * {
