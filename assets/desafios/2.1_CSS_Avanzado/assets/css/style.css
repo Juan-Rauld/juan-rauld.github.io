@@ -1,4 +1,10 @@
-body {
+.portafolio-back-to-main {
+    display: inline-block;
+    background-color: #ff5e5e;
+    width: 100%;
+}
+
+.body {
     margin: 0;
     display: flex;
     flex-direction: row;
