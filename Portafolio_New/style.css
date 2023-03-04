@@ -1,5 +1,3 @@
-/* makes sizing simpler */
-
 *,
 *::before,
 *::after {
@@ -25,7 +23,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: "inter", "sans-serif";
+  font-family: "inter", "Trebuchet MS";
 }
 
 /* responsive images/videos */
@@ -37,9 +35,20 @@ video {
   max-width: 100%;
 }
 
+:root {
+  --color-textos: rgb(223, 223, 223);
+}
+
+/* makes sizing simpler */
+
 body {
-  background-color: #091626;
-  font-family: "Inter" sans-serif;
+  background-color: #000813da;
+  font-family: "Inter" "Poppins" "Trebuchet MS";
+  color: var(--color-textos);
+}
+
+i {
+  color: var(--color-textos);
 }
 
 h1 {
@@ -81,6 +90,15 @@ div {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.397);
+}
+
+.subsection-main-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+  padding: 10rem 0 0 10rem;
 }
 
 .subsection-main-2 {
@@ -98,21 +116,18 @@ div {
   justify-content: flex-end;
 }
 
-#texto-vertical {
-  transform: rotate(-90deg);
-}
-
 .derecha {
   grid-area: derecha;
 }
 
 /* finalmente lo resolví a la mala... Toty, si lees esto, hay alguna cosa que pueda ayudar a no tener que hacer esos trucos a la mala?*/
 .bloque-texto-izq {
-  margin: 0 0 5rem 0;
+  transform: rotate(-90deg);
+  overflow: clip;
 }
 
 .bloque-texto-der {
-  margin: 5rem 0 0 0;
+  margin: 1rem 0 0 2rem;
 }
 
 p {
@@ -121,31 +136,56 @@ p {
 
 .intro {
   margin: 2rem;
+  font-weight: 100;
 }
 
 .little-intro {
-  font-size: 14px;
+  font-size: 1.2rem;
   font-weight: 200;
+  color: aquamarine;
 }
 
+/* guia de grilla
 .izquierda,
 .derecha,
 .main {
   border: rgba(255, 0, 0, 0) solid 1px;
 }
+*/
 
 .menu {
   font-size: 30px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 ul {
   list-style-type: none;
 }
 
-ul > li:hover {
+ul > li:hover,
+a:hover {
   color: rgb(73, 73, 73);
   transition: 300ms;
+  transform: scale(130%);
+}
+
+a {
+  color: var(--color-textos);
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+#texto-horizontal-derecha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
