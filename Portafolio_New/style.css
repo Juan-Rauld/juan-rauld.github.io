@@ -60,7 +60,9 @@ h4 {
   font-weight: bold;
 }
 
-h5, p, div {
+h5,
+p,
+div {
   font-size: 17px;
 }
 
@@ -68,13 +70,10 @@ h5, p, div {
   display: grid;
   width: 100%;
   height: 100vh;
-  grid-template-areas: 
-    "izquierda main derecha"
-  ;
+  grid-template-areas: "izquierda main derecha";
   grid-template-columns: 1fr 8fr 1fr;
   padding: 2rem;
 }
-
 
 .main {
   grid-area: main;
@@ -89,6 +88,7 @@ h5, p, div {
   flex-direction: column;
   align-items: flex-end;
   margin: 1rem;
+  padding: 0 10rem 10rem 0;
 }
 
 .izquierda {
@@ -96,17 +96,23 @@ h5, p, div {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  
-
 }
 
 #texto-vertical {
   transform: rotate(-90deg);
-
 }
 
 .derecha {
   grid-area: derecha;
+}
+
+/* finalmente lo resolví a la mala... Toty, si lees esto, hay alguna cosa que pueda ayudar a no tener que hacer esos trucos a la mala?*/
+.bloque-texto-izq {
+  margin: 0 0 5rem 0;
+}
+
+.bloque-texto-der {
+  margin: 5rem 0 0 0;
 }
 
 p {
@@ -119,9 +125,27 @@ p {
 
 .little-intro {
   font-size: 14px;
-  font-weight: 200;  
+  font-weight: 200;
 }
 
-.izquierda, .derecha, .main {
-  border: red solid 1px;
+.izquierda,
+.derecha,
+.main {
+  border: rgba(255, 0, 0, 0) solid 1px;
+}
+
+.menu {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul > li:hover {
+  color: rgb(73, 73, 73);
+  transition: 300ms;
 }
