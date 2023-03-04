@@ -222,10 +222,10 @@ a:visited {
   }
 
   .contenedor-main {
-    padding: 3rem 0rem;
+    padding: 1rem 0rem 0 0;
     display: grid;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
   }
 
   .subsection-main-1 {
@@ -264,9 +264,14 @@ a:visited {
   }
 
   .mobile-rrss {
-    padding: 3rem;
     justify-content: space-evenly;
     gap: 0;
   }
 
+  #texto-horizontal-derecha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+  }
 }
