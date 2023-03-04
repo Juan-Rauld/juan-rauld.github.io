@@ -23,10 +23,6 @@ body {
   height: 100vh;
 }
 
-header, footer {
-  width: 100vw;
-}
-
 /* responsive images/videos */
 img,
 picture,
@@ -39,36 +35,56 @@ video {
 li {
   list-style: none;
 }
+/* colores */
+:root {
+  --head_foot-bg-color: #41414131;
+  --bg-color-gral: #fcff9a3b;
+}
 
 /* CSS */
 .grid {
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 20% 80%;
   grid-template-areas:
     "header header header"
     "menu main main"
     "footer footer footer";
   height: 100vh;
-  grid-template-rows: 1fr 14fr 1fr;
-  gap: 1rem;
+  grid-template-rows: 2fr 10fr 2fr;
 }
 
 .header {
   grid-area: header;
   background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  background-color: var(--head_foot-bg-color);
 }
 
 .main {
   grid-area: main;
+  background-color: var(--bg-color-gral);
+  min-width: 400px;
 }
 
 .menu {
   grid-area: menu;
+  padding: 1rem;
+  background-color: var(--bg-color-gral);
+  display: block;
 }
 
 .footer {
   grid-area: footer;
-  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  background-color: var(--head_foot-bg-color);
 }
 
 .flex-container-menu {
@@ -95,12 +111,46 @@ li {
 .card {
   margin: 1em;
   height: 100%;
-  width: 280px;
+  width: 250px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .img-card {
-  width: 100px;
+border-radius: 5px;
+}
+.titulo-producto {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.precio {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.btn-comprar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d9f77;
+  transition: 150ms;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn-comprar:hover {
+  transform: scale(101%);
+}
+
+.item-menu:hover,
+.titulo-menu:hover {
+  transition: 300ms;
+  transform: scale(101%);
+  font-weight: 800;
 }
