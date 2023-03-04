@@ -1,74 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <ul class="nav nav-pills my-4 justify-content-center">
-            <li class="nav-item items">
-                <a class="nav-link active" aria-current="page" href="./index.html">Perfil</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./proyectos.html">1. HTML</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./assets/desafios/2.1_CSS_Avanzado/index.html">2. CSS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-        </ul>
+      <ul class="nav nav-pills my-4 justify-content-center">
+        <li class="nav-item items">
+          <a class="nav-link active" aria-current="page" href="./index.html"
+            >Perfil</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./proyectos.html">1. HTML</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="./assets/desafios/2.1_CSS_Avanzado/index.html"
+            >2. CSS</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html">Contacto</a>
+        </li>
+      </ul>
     </header>
 
     <main>
-        <h1>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                    </div>
-                    <div class="col-4">
-                        <div class="texto-margen">
-                            <h1 id="nombre fs-1">Hola, soy Juan</h1>
-                            <p class="fs-5">Soy un programador y músico, pero no te preocupes, no mezclo ambos talentos
-                                en un solo proyecto... a menos que sea tan interesante como mi portafolio.<br>
-                                <span class="fs-6 color-substxt">y sí... esto lo escribió un bot</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-4 ">
-                        <img src="./assets/img/dell-4Ea0P4IsZ_4-unsplash.jpg" alt=""
-                            class="imagen-margen img-fluid m-10">
-                    </div>
-                    <div class="col">
-                    </div>
-                </div>
+      <h1>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-4">
+              <div class="texto-margen">
+                <h1 id="nombre fs-1">Hola, soy Juan</h1>
+                <p class="fs-5">
+                  Soy un programador y músico, pero no te preocupes, no mezclo
+                  ambos talentos en un solo proyecto... a menos que sea tan
+                  interesante como mi portafolio.<br />
+                  <span class="fs-6 color-substxt"
+                    >y sí... esto lo escribió un bot</span
+                  >
+                </p>
+              </div>
             </div>
-
-        </h1>
+            <div class="col-4">
+              <img
+                src="./assets/img/dell-4Ea0P4IsZ_4-unsplash.jpg"
+                alt=""
+                class="imagen-margen img-fluid m-10"
+              />
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </h1>
     </main>
 
     <footer>
-        <nav class="navbar fixed-bottom navbar-light bg-danger">
-            <div class="container-fluid justify-content-center .bg-danger">
-                <a class="navbar-brand text-light fw-bold">En actualización</a>
-            </div>
-        </nav>
+      <nav class="navbar fixed-bottom navbar-light bg-danger">
+        <div class="container-fluid justify-content-center .bg-danger">
+          <a class="navbar-brand text-light fw-bold">En actualización</a>
+        </div>
+      </nav>
     </footer>
-
-</body>
-
-
-
+  </body>
 </html>
