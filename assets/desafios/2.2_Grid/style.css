@@ -78,7 +78,7 @@ li {
 
 .menu {
   grid-area: menu;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 3rem;
   background-color: var(--bg-color-gral);
   display: block;
 }
