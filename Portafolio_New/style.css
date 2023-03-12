@@ -145,13 +145,8 @@ p {
   color: aquamarine;
 }
 
-/* guia de grilla
-.izquierda,
-.derecha,
-.main {
-  border: rgba(255, 0, 0, 0) solid 1px;
-}
-*/
+
+
 
 .menu {
   font-size: 30px;
@@ -194,9 +189,6 @@ a:visited {
   display: none
 }
 
-.chat {
-  
-}
 
 @media only screen and (max-width: 600px) {
   * {
