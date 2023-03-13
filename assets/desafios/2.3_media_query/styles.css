@@ -333,7 +333,8 @@ a {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        overflow: scroll;
+        overflow-y: scroll;
+
     }
 
     .main-desktop > .product-card {
