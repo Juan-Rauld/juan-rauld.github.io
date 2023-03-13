@@ -25,6 +25,8 @@ html {
 
 body {
     min-height: 100vh;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+
 }
 
 /* responsive images/videos */
