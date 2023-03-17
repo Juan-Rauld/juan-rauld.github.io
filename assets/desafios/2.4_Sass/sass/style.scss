@@ -16,6 +16,7 @@ body {
 
 .card {
     width: 20rem;
+    padding: 1rem;
     @extend .estilo-base;
     .card-title {
         color: $pink-light;
