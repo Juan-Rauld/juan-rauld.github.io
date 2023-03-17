@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Freehand&display=swap");
+.estilo-base, .card {
+  background-color: #2f2f2f;
+  color: #f8f9fa;
+  font-family: "Freehand", cursive;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.card {
+  width: 20rem;
+}
+
+.card .card-title {
+  color: #CF649A;
+  font-size: 1.4rem;
+}
+
+.card .btn-primary {
+  background-color: #CF649A;
+  border-color: #CF649A;
+}

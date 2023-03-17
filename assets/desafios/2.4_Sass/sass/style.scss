@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+.estilo-base {
+    background-color: $black-light;
+    color: $light;
+    font-family: $fuentePrincipal;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.card {
+    width: 20rem;
+    @extend .estilo-base;
+    .card-title {
+        color: $pink-light;
+        font-size: 1.4rem;
+    }
+    .btn-primary {
+        background-color: $pink-light;
+        border-color: $pink-light;
+    }
+}
